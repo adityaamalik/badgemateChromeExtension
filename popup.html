@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Badge Mate</title>
+    <link rel="stylesheet" href="/popus.css">
+  </head>
+  <body>
+    
+    <form style="margin: 5px;" id="form-data" method="POST" action="http://localhost:3000/extensionIssue">
+        <input style="margin-top: 3px;" type="email" name="username" id="username" placeholder="Email" />
+        <input style="margin-top: 3px;" type="text" name="badgename" id="badgename" placeholder="Badge Name" />
+        <input style="margin-top: 3px;" type="email" name="recipient" id="recipient" placeholder="Recipient Email" />
+        <textarea style="margin-top: 3px;" name="remark" placeholder="Enter Remark"></textarea>
+
+        <input type="submit" id="send" value="Send">
+    </form>
+
+    <p style="display: none;" id="msg"></p>
+    <script src="popup.js"></script>
+  </body>
+</html>
